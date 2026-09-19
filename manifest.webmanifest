@@ -1,0 +1,11 @@
+{
+  "name":"Roteiro SF — Igreja, Museu e Apple Park",
+  "short_name":"Roteiro SF",
+  "description":"Checklist de viagem para sábado na Bay Area.",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#0b0d10",
+  "theme_color":"#0b0d10",
+  "icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
