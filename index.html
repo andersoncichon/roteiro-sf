@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Roteiro SF">
-<title>Roteiro SF — Sábado</title>
+<title>Roteiro SF — Domingo</title>
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <style>
@@ -31,14 +31,37 @@ details{border-top:1px solid var(--line)}summary{list-style:none;padding:13px 15
 <body>
 <div class="wrap">
 <header class="hero">
-<div class="eyebrow">Sábado, 19 de setembro de 2026</div>
-<h1>Igreja → Computer History Museum → Google → Hotel</h1>
-<p>Você já está no museu. Daqui: Google Visitor Experience a pé e depois volta ao The Mosser. Apple e os outros lugares ficam para amanhã.</p>
-<div class="grid3"><div class="mini"><b>Agora</b><span>Computer History Museum</span></div><div class="mini"><b>Depois</b><span>Google</span></div><div class="mini"><b>Final</b><span>volta ao hotel</span></div></div>
+<div class="eyebrow">Domingo, 20 de setembro de 2026</div>
+<h1>Compras rápidas perto do The Mosser</h1>
+<p>Lista de hoje: Certain Dri + escova de dentes no Target Metreon e Murad Superactive Mattifying Oil + Pore Control Moisturizer SPF 50 na Sephora Powell. O roteiro de sábado e todos os checks antigos continuam salvos mais abaixo.</p>
+<div class="grid3"><div class="mini"><b>1º</b><span>Target Metreon</span></div><div class="mini"><b>2º</b><span>Sephora Powell</span></div><div class="mini"><b>Final</b><span>The Mosser</span></div></div>
 </header>
 
 <div class="note"><strong>No iPhone:</strong> Safari → Compartilhar → <strong>Adicionar à Tela de Início</strong>. Depois abra pelo ícone “Roteiro SF”. Os checks e a posição da página ficam salvos.</div>
-<div class="sticky"><div class="row"><span><strong id="done">0</strong>/<span id="total">0</span> concluídos</span><a class="next" id="nextTop" href="#s1">Próxima etapa</a></div><div class="bar"><div id="bar"></div></div></div>
+<div class="sticky"><div class="row"><span><strong id="done">0</strong>/<span id="total">0</span> concluídos</span><a class="next" id="nextTop" href="#shop1">Próxima etapa</a></div><div class="bar"><div id="bar"></div></div></div>
+
+<div id="shopping-today">
+<div class="label">Hoje — compras rápidas</div>
+<div class="note good"><strong>Rota simples a pé:</strong> The Mosser → Target San Francisco Central (Metreon) → Sephora Powell → The Mosser. O Target resolve <strong>Certain Dri + escova de dentes</strong>; a Sephora é para o <strong>Murad</strong>. O progresso acima conta somente estas compras de hoje.</div>
+
+<section class="card" id="shop1"><div class="head"><div class="n">1</div><div><div class="time">Primeira parada</div><h2>The Mosser → Target Metreon</h2><p>Target San Francisco Central, 789 Mission St, dentro do Metreon. Fica praticamente ao lado do hotel.</p></div></div>
+<div class="actions"><a class="btn primary" href="https://maps.apple.com/?saddr=The+Mosser+Hotel%2C+54+4th+St%2C+San+Francisco%2C+CA+94103&daddr=Target%2C+789+Mission+St%2C+San+Francisco%2C+CA+94103&dirflg=w">Abrir caminhada no Apple Maps</a><a class="btn" href="https://www.target.com/sl/san-francisco-central/2766">Abrir Target</a></div>
+<div class="check"><input class="task current-task" id="shop-target" type="checkbox"><label for="shop-target">Cheguei ao Target Metreon</label></div>
+<div class="check"><input class="task current-task" id="buy-certain-dri" type="checkbox"><label for="buy-certain-dri"><strong>Certain Dri Prescription Strength Clinical Roll-On</strong><small>Procure na área de desodorantes/antitranspirantes. Se não estiver na prateleira, mostre o nome no celular a um funcionário.</small></label></div>
+<div class="check"><input class="task current-task" id="buy-toothbrush" type="checkbox"><label for="buy-toothbrush"><strong>Escova de dentes</strong><small>Aproveite a mesma parada no Target.</small></label></div></section>
+
+<section class="card" id="shop2"><div class="head"><div class="n">2</div><div><div class="time">Depois do Target</div><h2>Target → Sephora Powell</h2><p>Sephora Powell, 33 Powell St. A unidade abre aos domingos às 10:00.</p></div></div>
+<div class="actions"><a class="btn primary" href="https://maps.apple.com/?saddr=Target%2C+789+Mission+St%2C+San+Francisco%2C+CA+94103&daddr=Sephora%2C+33+Powell+St%2C+San+Francisco%2C+CA+94102&dirflg=w">Abrir caminhada no Apple Maps</a><a class="btn" href="https://www.sephora.com/product/mattifying-oil-pore-control-moisturizer-spf-50-with-salicylic-acid-P516137">Abrir produto na Sephora</a></div>
+<div class="check"><input class="task current-task" id="shop-sephora" type="checkbox"><label for="shop-sephora">Cheguei à Sephora Powell</label></div>
+<div class="check"><input class="task current-task" id="buy-murad" type="checkbox"><label for="buy-murad"><strong>Murad Superactive Mattifying Oil + Pore Control Moisturizer SPF 50</strong><small>Hidratante matificante para controle de oleosidade e aparência dos poros, com FPS 50.</small></label></div></section>
+
+<section class="card" id="shop3"><div class="head"><div class="n">3</div><div><div class="time">Depois das compras</div><h2>Sephora → The Mosser</h2><p>Volta curta a pé para deixar as compras no hotel.</p></div></div>
+<div class="actions"><a class="btn primary" href="https://maps.apple.com/?saddr=Sephora%2C+33+Powell+St%2C+San+Francisco%2C+CA+94102&daddr=The+Mosser+Hotel%2C+54+4th+St%2C+San+Francisco%2C+CA+94103&dirflg=w">Abrir volta no Apple Maps</a></div>
+<div class="check"><input class="task current-task" id="shop-back-hotel" type="checkbox"><label for="shop-back-hotel">Voltei ao hotel com as compras</label></div></section>
+</div>
+
+<div class="label">Ontem — histórico de sábado</div>
+
 <div class="note good"><strong>Novo plano:</strong> sem Apple hoje. Termine o museu com calma, caminhe até o <strong>Google Visitor Experience</strong> e depois volte ao hotel. O progresso que você já marcou continua salvo.</div>
 
 <div class="label">Manhã — Palo Alto</div>
@@ -102,16 +125,16 @@ details{border-top:1px solid var(--line)}summary{list-style:none;padding:13px 15
 <div class="note">O roteiro de hoje agora termina no <strong>Google → hotel</strong>. Amanhã podemos transformar a seção pendente em Apple Park + Stanford ou outras paradas, sem alterar os checks já salvos de hoje.</div>
 </div>
 
-<div class="footer"><div><button id="reset" type="button">Zerar checks</button><a id="nextBottom" href="#s1">Abrir próxima etapa</a></div></div>
+<div class="footer"><div><button id="reset" type="button">Zerar checks</button><a id="nextBottom" href="#shop1">Abrir próxima etapa</a></div></div>
 
 <script>
-const P="route-sf-v4-",SK=P+"scroll",tasks=[...document.querySelectorAll(".task")],done=document.getElementById("done"),total=document.getElementById("total"),bar=document.getElementById("bar"),n1=document.getElementById("nextTop"),n2=document.getElementById("nextBottom");
+const P="route-sf-v4-",SK=P+"scroll",allTasks=[...document.querySelectorAll(".task")],tasks=[...document.querySelectorAll(".current-task")],done=document.getElementById("done"),total=document.getElementById("total"),bar=document.getElementById("bar"),n1=document.getElementById("nextTop"),n2=document.getElementById("nextBottom");
 if("scrollRestoration" in history) history.scrollRestoration="manual";
-function update(){const c=tasks.filter(x=>x.checked).length;done.textContent=c;total.textContent=tasks.length;bar.style.width=(c/tasks.length*100)+"%";document.querySelectorAll(".check").forEach(r=>{const x=r.querySelector("input");if(x)r.style.opacity=x.checked?".58":"1"});const f=tasks.find(x=>!x.checked);let t="#s9";if(f){const card=f.closest(".card");if(card)t="#"+card.id}n1.href=t;n2.href=t;n1.textContent=f?"Próxima etapa":"Tudo concluído";n2.textContent=f?"Abrir próxima etapa":"Tudo concluído"}
-tasks.forEach(x=>{try{x.checked=localStorage.getItem(P+x.id)==="1"}catch(e){}x.addEventListener("change",()=>{try{localStorage.setItem(P+x.id,x.checked?"1":"0")}catch(e){}update()})});
+function update(){const c=tasks.filter(x=>x.checked).length;done.textContent=c;total.textContent=tasks.length;bar.style.width=(c/tasks.length*100)+"%";document.querySelectorAll(".check").forEach(r=>{const x=r.querySelector("input");if(x)r.style.opacity=x.checked?".58":"1"});const f=tasks.find(x=>!x.checked);let t="#shop3";if(f){const card=f.closest(".card");if(card)t="#"+card.id}n1.href=t;n2.href=t;n1.textContent=f?"Próxima compra":"Compras concluídas";n2.textContent=f?"Abrir próxima compra":"Compras concluídas"}
+allTasks.forEach(x=>{try{x.checked=localStorage.getItem(P+x.id)==="1"}catch(e){}x.addEventListener("change",()=>{try{localStorage.setItem(P+x.id,x.checked?"1":"0")}catch(e){}update()})});
 let timer;function saveScroll(){try{localStorage.setItem(SK,String(window.scrollY||0))}catch(e){}}
 addEventListener("scroll",()=>{clearTimeout(timer);timer=setTimeout(saveScroll,120)},{passive:true});addEventListener("pagehide",saveScroll);document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")saveScroll()});
-document.getElementById("reset").onclick=()=>{if(confirm("Zerar todas as marcações?")){tasks.forEach(x=>{x.checked=false;try{localStorage.removeItem(P+x.id)}catch(e){}});try{localStorage.removeItem(SK)}catch(e){}update();scrollTo({top:0,behavior:"smooth"})}};
+document.getElementById("reset").onclick=()=>{if(confirm("Zerar todas as marcações?")){allTasks.forEach(x=>{x.checked=false;try{localStorage.removeItem(P+x.id)}catch(e){}});try{localStorage.removeItem(SK)}catch(e){}update();scrollTo({top:0,behavior:"smooth"})}};
 update();
 addEventListener("load",()=>{if(!location.hash){try{const y=parseInt(localStorage.getItem(SK)||"0",10);if(y>0)setTimeout(()=>scrollTo(0,y),100)}catch(e){}}});
 if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
