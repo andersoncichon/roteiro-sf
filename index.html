@@ -23,6 +23,7 @@
 .actions{display:flex;gap:8px;padding:0 15px 15px;flex-wrap:wrap}.btn{flex:1 1 180px;text-decoration:none;text-align:center;border:1px solid #35414e;background:#222932;border-radius:12px;padding:11px;font-size:14px;font-weight:800}.btn.primary{background:#ebf4ff;color:#08111b;border-color:#ebf4ff}
 .check{display:flex;gap:11px;padding:12px 15px;border-top:1px solid var(--line);align-items:flex-start}.check input{width:22px;height:22px;margin:0;accent-color:var(--green)}.check label{font-size:14px}.check small{display:block;color:var(--muted);margin-top:3px}
 details{border-top:1px solid var(--line)}summary{list-style:none;padding:13px 15px;cursor:pointer;font-weight:800;font-size:14px}summary::-webkit-details-marker{display:none}summary:after{content:"＋";float:right;color:var(--muted)}details[open] summary:after{content:"−"}.detail{padding:0 15px 15px;color:var(--muted);font-size:14px}.detail strong{color:var(--text)}
+.shade-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:8px}.shade{border:1px solid var(--line);border-radius:10px;padding:8px 9px;background:#11151a;font-size:12px;color:var(--muted)}.shade b{display:block;color:var(--text);font-size:13px}.copybtn{width:100%;margin-top:10px;border:1px solid #35414e;background:#222932;color:var(--text);border-radius:11px;padding:10px;font-weight:800}@media(max-width:460px){.shade-grid{grid-template-columns:1fr}}
 .budget{width:100%;border-collapse:collapse;font-size:14px}.budget td{padding:9px 5px;border-bottom:1px solid var(--line)}.budget td:last-child{text-align:right;font-weight:800;white-space:nowrap}.total{font-size:25px;font-weight:900}
 .footer{position:fixed;left:0;right:0;bottom:0;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:rgba(11,13,16,.96);backdrop-filter:blur(16px);border-top:1px solid var(--line)}.footer>div{max-width:760px;margin:auto;display:flex;gap:8px}.footer button,.footer a{border:1px solid var(--line);border-radius:12px;background:#1c2128;color:var(--text);padding:10px 12px;min-height:42px;font-weight:800;text-decoration:none;font-size:13px}.footer a{flex:1;text-align:center;background:var(--blue);border-color:var(--blue);color:#07111d}
 @media(max-width:460px){h1{font-size:26px}.actions .btn{flex-basis:100%}}
@@ -45,18 +46,69 @@ details{border-top:1px solid var(--line)}summary{list-style:none;padding:13px 15
 <div class="note good"><strong>Rota simples a pé:</strong> The Mosser → Target San Francisco Central (Metreon) → Sephora Powell → The Mosser. O Target resolve <strong>Certain Dri + escova de dentes</strong>; a Sephora é para o <strong>Murad</strong>. O progresso acima conta somente estas compras de hoje.</div>
 
 <section class="card" id="shop1"><div class="head"><div class="n">1</div><div><div class="time">Primeira parada</div><h2>The Mosser → Target Metreon</h2><p>Target San Francisco Central, 789 Mission St, dentro do Metreon. Fica praticamente ao lado do hotel.</p></div></div>
-<div class="actions"><a class="btn primary" href="https://maps.apple.com/?saddr=The+Mosser+Hotel%2C+54+4th+St%2C+San+Francisco%2C+CA+94103&daddr=Target%2C+789+Mission+St%2C+San+Francisco%2C+CA+94103&dirflg=w">Abrir caminhada no Apple Maps</a><a class="btn" href="https://www.target.com/sl/san-francisco-central/2766">Abrir Target</a></div>
+<div class="actions"><a class="btn primary" href="https://maps.apple.com/directions?destination=Target%20San%20Francisco%20Central%2C%20789%20Mission%20St%2C%20San%20Francisco%2C%20CA%2094103&mode=walking">Abrir caminhada no Apple Maps</a><a class="btn" href="https://www.target.com/sl/san-francisco-central/2766">Abrir Target</a></div>
 <div class="check"><input class="task current-task" id="shop-target" type="checkbox"><label for="shop-target">Cheguei ao Target Metreon</label></div>
 <div class="check"><input class="task current-task" id="buy-certain-dri" type="checkbox"><label for="buy-certain-dri"><strong>Certain Dri Prescription Strength Clinical Roll-On</strong><small>Procure na área de desodorantes/antitranspirantes. Se não estiver na prateleira, mostre o nome no celular a um funcionário.</small></label></div>
 <div class="check"><input class="task current-task" id="buy-toothbrush" type="checkbox"><label for="buy-toothbrush"><strong>Escova de dentes</strong><small>Aproveite a mesma parada no Target.</small></label></div></section>
 
 <section class="card" id="shop2"><div class="head"><div class="n">2</div><div><div class="time">Depois do Target</div><h2>Target → Sephora Powell</h2><p>Sephora Powell, 33 Powell St. A unidade abre aos domingos às 10:00.</p></div></div>
-<div class="actions"><a class="btn primary" href="https://maps.apple.com/?saddr=Target%2C+789+Mission+St%2C+San+Francisco%2C+CA+94103&daddr=Sephora%2C+33+Powell+St%2C+San+Francisco%2C+CA+94102&dirflg=w">Abrir caminhada no Apple Maps</a><a class="btn" href="https://www.sephora.com/product/mattifying-oil-pore-control-moisturizer-spf-50-with-salicylic-acid-P516137">Abrir produto na Sephora</a></div>
+<div class="actions"><a class="btn primary" href="https://maps.apple.com/directions?destination=Sephora%2C%2033%20Powell%20St%2C%20San%20Francisco%2C%20CA%2094102&mode=walking">Abrir caminhada no Apple Maps</a><a class="btn" href="https://www.sephora.com/product/mattifying-oil-pore-control-moisturizer-spf-50-with-salicylic-acid-P516137">Abrir produto na Sephora</a></div>
 <div class="check"><input class="task current-task" id="shop-sephora" type="checkbox"><label for="shop-sephora">Cheguei à Sephora Powell</label></div>
-<div class="check"><input class="task current-task" id="buy-murad" type="checkbox"><label for="buy-murad"><strong>Murad Superactive Mattifying Oil + Pore Control Moisturizer SPF 50</strong><small>Hidratante matificante para controle de oleosidade e aparência dos poros, com FPS 50.</small></label></div></section>
+<div class="check"><input class="task current-task" id="buy-murad" type="checkbox"><label for="buy-murad"><strong>Murad Superactive Mattifying Oil + Pore Control Moisturizer SPF 50</strong><small>Hidratante matificante para controle de oleosidade e aparência dos poros, com FPS 50.</small></label></div>
+
+<div class="check"><input class="task current-task" id="buy-nars" type="checkbox"><label for="buy-nars"><strong>NARS Mini Radiant Creamy Concealer</strong><small>US$ 17. Confirmar a tonalidade antes de comprar.</small></label></div>
+<details><summary>Tonalidades NARS Mini Concealer — 30 opções</summary><div class="detail">
+<p><strong>Muito claras / claras</strong></p><div class="shade-grid">
+<div class="shade"><b>Chantilly L1</b>muito clara · neutra</div><div class="shade"><b>Affogato L1.25</b>muito clara · fria</div>
+<div class="shade"><b>Vanilla L2</b>muito clara · neutra</div><div class="shade"><b>Nougatine L2.2</b>clara · quente</div>
+<div class="shade"><b>Madeleine L2.3</b>clara · neutra</div><div class="shade"><b>Café Au Lait L2.4</b>clara · neutra/pêssego</div>
+<div class="shade"><b>Crème Brulée L2.5</b>clara · fria</div><div class="shade"><b>Café con Leche L2.6</b>clara-média · quente</div>
+<div class="shade"><b>Cannelle L2.75</b>clara · quente</div><div class="shade"><b>Marron Glacé L2.8</b>clara-média · quente/pêssego</div>
+<div class="shade"><b>Honey L3</b>clara-média · fria</div></div>
+<p><strong>Médias</strong></p><div class="shade-grid">
+<div class="shade"><b>Crema Catalana M0</b>média · fria</div><div class="shade"><b>Custard M1</b>média · neutra</div>
+<div class="shade"><b>Toffee M1.25</b>média · fria</div><div class="shade"><b>Macadamia M1.5</b>média · quente</div>
+<div class="shade"><b>Tiramisu M1.75</b>média · neutra</div><div class="shade"><b>Ginger M2</b>média · quente/dourada</div>
+<div class="shade"><b>Praline M3</b>média a médio-profunda · quente</div></div>
+<p><strong>Médio-profundas / profundas</strong></p><div class="shade-grid">
+<div class="shade"><b>Biscuit MD1</b>média a médio-profunda · quente/dourada</div><div class="shade"><b>Sucre D'Orge MD1.5</b>média a médio-profunda · quente/pêssego</div>
+<div class="shade"><b>Caramel MD2</b>média a médio-profunda · quente</div><div class="shade"><b>Chestnut MD2.5</b>médio-profunda · fria</div>
+<div class="shade"><b>Walnut MD2.6</b>médio-profunda · quente/oliva</div><div class="shade"><b>Truffle MD2.75</b>médio-profunda · quente/pêssego</div>
+<div class="shade"><b>Amande MD3</b>médio-profunda a profunda · neutra</div><div class="shade"><b>Hazelnut MD4</b>médio-profunda a profunda · fria</div>
+<div class="shade"><b>Chocolat D0</b>médio-profunda a profunda · quente</div><div class="shade"><b>Café D1</b>médio-profunda a profunda · neutra</div>
+<div class="shade"><b>Cacao D2</b>profunda · quente</div><div class="shade"><b>Dark Coffee D3</b>profunda · neutra</div></div>
+<a class="btn" style="display:block;margin-top:10px" href="https://www.sephora.com/product/radiant-creamy-concealer-mini-P422077">Abrir NARS na Sephora</a>
+</div></details>
+
+<div class="check"><input class="task current-task" id="buy-bronzer" type="checkbox"><label for="buy-bronzer"><strong>Rare Beauty Warm Wishes Effortless Cream Bronzer Stick</strong><small>US$ 30. Escolher uma das 8 tonalidades.</small></label></div>
+<details><summary>Tonalidades Rare Beauty Bronzer — 8 opções</summary><div class="detail"><div class="shade-grid">
+<div class="shade"><b>Power Boost</b>bronzeado verdadeiro · neutro</div><div class="shade"><b>Bright Side</b>bronzeado suave · frio</div>
+<div class="shade"><b>Happy Sol</b>marrom claro · frio</div><div class="shade"><b>Always Sunny</b>caramelo intenso · neutro</div>
+<div class="shade"><b>Good Energy</b>marrom médio · neutro</div><div class="shade"><b>Full of Life</b>bronze profundo · dourado</div>
+<div class="shade"><b>On the Horizon</b>marrom profundo · frio</div><div class="shade"><b>True Warmth</b>âmbar profundo · vermelho <strong>(somente online)</strong></div></div>
+<a class="btn" style="display:block;margin-top:10px" href="https://www.sephora.com/product/rare-beauty-by-selena-gomez-warm-wishes-effortless-bronzer-sticks-P479343">Abrir Bronzer na Sephora</a>
+</div></details>
+
+<div class="check"><input class="task current-task" id="buy-contour" type="checkbox"><label for="buy-contour"><strong>Rare Beauty Soft Pinch Liquid Contour</strong><small>US$ 30. Escolher uma das 7 tonalidades.</small></label></div>
+<details><summary>Tonalidades Rare Beauty Contour — 7 opções</summary><div class="detail"><div class="shade-grid">
+<div class="shade"><b>Gentle</b>pele muito clara · taupe frio</div><div class="shade"><b>Mellow</b>pele clara · marrom frio</div>
+<div class="shade"><b>Solace</b>pele média · taupe frio</div><div class="shade"><b>Serene</b>pele média · marrom</div>
+<div class="shade"><b>Tranquil</b>pele médio-profunda · marrom frio</div><div class="shade"><b>Peaceful</b>pele profunda · marrom neutro</div>
+<div class="shade"><b>Sublime</b>pele profunda · marrom frio</div></div>
+<a class="btn" style="display:block;margin-top:10px" href="https://www.sephora.com/product/soft-pinch-liquid-contour-P514741">Abrir Contour na Sephora</a>
+</div></details>
+
+<div class="check"><input class="task current-task" id="buy-mascara" type="checkbox"><label for="buy-mascara"><strong>SEPHORA COLLECTION Size Up Volumizing Mascara</strong><small>US$ 16. Cores: Black, Blue ou Brown.</small></label></div>
+<details><summary>Cores da máscara — 3 opções</summary><div class="detail"><div class="shade-grid">
+<div class="shade"><b>Black</b>preto intenso clássico</div><div class="shade"><b>Blue</b>azul vibrante</div><div class="shade"><b>Brown</b>marrom chocolate</div></div>
+<a class="btn" style="display:block;margin-top:10px" href="https://www.sephora.com/product/size-up-mascara-P466443">Abrir máscara na Sephora</a>
+</div></details>
+
+<button class="copybtn" id="copy-shades" type="button">Copiar perguntas de tonalidade para enviar</button>
+</section>
 
 <section class="card" id="shop3"><div class="head"><div class="n">3</div><div><div class="time">Depois das compras</div><h2>Sephora → The Mosser</h2><p>Volta curta a pé para deixar as compras no hotel.</p></div></div>
-<div class="actions"><a class="btn primary" href="https://maps.apple.com/?saddr=Sephora%2C+33+Powell+St%2C+San+Francisco%2C+CA+94102&daddr=The+Mosser+Hotel%2C+54+4th+St%2C+San+Francisco%2C+CA+94103&dirflg=w">Abrir volta no Apple Maps</a></div>
+<div class="actions"><a class="btn primary" href="https://maps.apple.com/directions?destination=The%20Mosser%20Hotel%2C%2054%204th%20St%2C%20San%20Francisco%2C%20CA%2094103&mode=walking">Abrir volta no Apple Maps</a></div>
 <div class="check"><input class="task current-task" id="shop-back-hotel" type="checkbox"><label for="shop-back-hotel">Voltei ao hotel com as compras</label></div></section>
 </div>
 
@@ -125,7 +177,7 @@ details{border-top:1px solid var(--line)}summary{list-style:none;padding:13px 15
 <div class="note">O roteiro de hoje agora termina no <strong>Google → hotel</strong>. Amanhã podemos transformar a seção pendente em Apple Park + Stanford ou outras paradas, sem alterar os checks já salvos de hoje.</div>
 </div>
 
-<div class="footer"><div><button id="reset" type="button">Zerar checks</button><a id="nextBottom" href="#shop1">Abrir próxima etapa</a></div></div>
+<div class="footer"><div><button id="reset" type="button">Zerar compras de hoje</button><a id="nextBottom" href="#shop1">Abrir próxima etapa</a></div></div>
 
 <script>
 const P="route-sf-v4-",SK=P+"scroll",allTasks=[...document.querySelectorAll(".task")],tasks=[...document.querySelectorAll(".current-task")],done=document.getElementById("done"),total=document.getElementById("total"),bar=document.getElementById("bar"),n1=document.getElementById("nextTop"),n2=document.getElementById("nextBottom");
@@ -134,7 +186,8 @@ function update(){const c=tasks.filter(x=>x.checked).length;done.textContent=c;t
 allTasks.forEach(x=>{try{x.checked=localStorage.getItem(P+x.id)==="1"}catch(e){}x.addEventListener("change",()=>{try{localStorage.setItem(P+x.id,x.checked?"1":"0")}catch(e){}update()})});
 let timer;function saveScroll(){try{localStorage.setItem(SK,String(window.scrollY||0))}catch(e){}}
 addEventListener("scroll",()=>{clearTimeout(timer);timer=setTimeout(saveScroll,120)},{passive:true});addEventListener("pagehide",saveScroll);document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")saveScroll()});
-document.getElementById("reset").onclick=()=>{if(confirm("Zerar todas as marcações?")){allTasks.forEach(x=>{x.checked=false;try{localStorage.removeItem(P+x.id)}catch(e){}});try{localStorage.removeItem(SK)}catch(e){}update();scrollTo({top:0,behavior:"smooth"})}};
+document.getElementById("reset").onclick=()=>{if(confirm("Zerar somente as compras de hoje?")){tasks.forEach(x=>{x.checked=false;try{localStorage.removeItem(P+x.id)}catch(e){}});update();scrollTo({top:0,behavior:"smooth"})}};
+const copyShades=document.getElementById("copy-shades");if(copyShades)copyShades.onclick=async()=>{const msg="Me diga quais cores você quer destes produtos:\n\n1) NARS Mini Radiant Creamy Concealer — escolha o nome/código da tonalidade (ex.: Custard M1, Tiramisu M1.75, Ginger M2).\n\n2) Rare Beauty Warm Wishes Bronzer Stick — Power Boost, Bright Side, Happy Sol, Always Sunny, Good Energy, Full of Life, On the Horizon ou True Warmth (esta última é só online).\n\n3) Rare Beauty Soft Pinch Liquid Contour — Gentle, Mellow, Solace, Serene, Tranquil, Peaceful ou Sublime.\n\n4) Sephora Collection Size Up Mascara — Black, Blue ou Brown.";try{await navigator.clipboard.writeText(msg);copyShades.textContent="Copiado ✓";setTimeout(()=>copyShades.textContent="Copiar perguntas de tonalidade para enviar",1800)}catch(e){alert(msg)}};
 update();
 addEventListener("load",()=>{if(!location.hash){try{const y=parseInt(localStorage.getItem(SK)||"0",10);if(y>0)setTimeout(()=>scrollTo(0,y),100)}catch(e){}}});
 if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
